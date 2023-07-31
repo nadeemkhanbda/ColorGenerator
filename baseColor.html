@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Edu+SA+Beginner&family=Lexend+Deca&family=Lugrasimo&family=Orbitron:wght@500&family=Outfit:wght@300&family=Quantico:wght@700&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lugrasimo', cursive;
+        }
+        #container1{
+            width: 100%;
+            background:rgb(197, 197, 79);
+            height: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px rgb(44, 44, 3);
+        }
+        #heading{
+            font-size: 0.8rem;
+            color: rgb(62, 92, 152);
+            font-family: 'Edu SA Beginner', cursive;
+            text-shadow: 0px 0px 5px rgb(140, 2, 2);
+            
+        }
+        #clr-index{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+            gap: 20px;
+            color: white;
+            text-shadow: 0px 0px 5px rgb(140, 2, 2);
+            }
+        #clr-index li{
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px ;
+            background-color: rgb(133, 133, 1);
+            
+        }
+        #clr-index li > a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        #main-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 80vh;
+            gap: 20px;
+        }
+        p{
+            padding: 20px;
+            border: 1px solid black;
+            width: 30%;
+            border-radius: 10px;
+            color: white;
+            background-color: darkblue;
+            font-size: 1.5rem;
+            box-shadow: 0px 0px 20px purple;
+            margin-top: 20px;
+        }
+        button{
+            padding: 10px;
+            width: 8%;
+            background-color: orange;
+            border: 1px solid ;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        @media  screen and (max-width:700px) {
+            #heading{
+            font-size: 0.45rem;
+            color: rgb(38, 83, 78);
+            font-family: 'Edu SA Beginner', cursive;
+            text-shadow: 0px 0px 5px rgb(140, 2, 2);
+            
+        }
+        #clr-index{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            
+            gap: 5px;
+            color: white;
+            text-shadow: 0px 0px 5px rgb(140, 2, 2);
+            }
+            #clr-index li{
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px ;
+            background-color: rgb(133, 133, 1);
+            font-size: 0.5rem;
+            
+        }
+        p{
+            padding: 10px;
+            border: 1px solid black;
+            width: auto;
+            border-radius: 10px;
+            color: white;
+            background-color: darkblue;
+            font-size: 1rem;
+            box-shadow: 0px 0px 20px purple;
+            margin-top: 20px;
+        }
+        button{
+            width: 15%;
+        }
+        }
+        footer{
+            text-align: center;
+            font-size: 0.5rem;
+            width: 100%;
+            background-color: blue;
+            padding: 8px;
+            color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div id="heading">
+            <h1>COLOR GENERATOR</h1>
+        </div>
+        <div id="clr-index">
+            <li><a href="./baseColor.html">BASECOLOR</a></li>
+            <li><a href="./hexColor.html">HEXCOLOR</a></li>
+        </div>
+    </div>
+    <div id="main-container">
+        <p>
+            background-color:  <span id="result"></span>
+        </p>
+        <button id="btn">Click me</button>
+    </div>
+    <footer>@Created by Nadeem Khan</footer>
+    <script src="./baseColor.js"></script>
+</body>
+</html>
